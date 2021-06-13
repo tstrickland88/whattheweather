@@ -17,12 +17,18 @@
     <div class="row">
         <div class=" col-md-3 bg-light">
             <h2>Search for a City</h2>
-            <input type ="search">
-            <button class="btn btn-primary btn-lg" style="width: 100%;">search</button>
+            <input type ="search" id="search">
+            <button class="btn btn-primary btn-lg" id="searchBTN" style="width: 100%;">search</button>
+            <hr>
+            <div id="history"></div>
         </div>
         <div class=" col-md-9 bg-dark">
-            <div class="row bg-danger">
-                <h2>Atlanta</h2>
+            <div class="row bg-light" id="city-dash">
+                <h2>Atlanta (06/13/2021) <img src="https://openweathermap.org/img/w/04d.png"></h2>
+                <p>Temp: 97°f</p>
+                <p>Wind: 5 mph</p>
+                <P>Humidity: 30%</P>
+                <p>UV Index: <span class="btn btn-success">30</span></p>
             </div>
             <div class="row">
                 <h3>!</h3>
@@ -36,8 +42,12 @@
 
 
    </div>
+   <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <script src="assets/js/config.js"></script>
+
     <script src="assets/js/app.js"></script>
 
 </body>
