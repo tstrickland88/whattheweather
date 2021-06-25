@@ -23,7 +23,7 @@ function handleClick(){
 }
 
 function getGeocode(query, cityNoPlus){
-    var baseUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=${API_KEY}`
+    var baseUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=${API_KEY}`
 
     fetch(baseUrl).then(res => {
         return res.json();
